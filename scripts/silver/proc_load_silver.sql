@@ -171,7 +171,7 @@ BEGIN
 			CASE
 				WHEN UPPER(TRIM(gen)) IN ('M', 'MALE')   THEN 'Male'
 				WHEN UPPER(TRIM(gen)) IN ('F', 'FEMALE') THEN 'Female'
-			ELSE 'Unknown'
+			ELSE 'n/a'
 		END AS gen    
 		FROM bronze.erp_cust_az12
 		SET @end_time = GETDATE();
